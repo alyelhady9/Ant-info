@@ -1,0 +1,209 @@
+:root {
+    --primary : #D97904;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.landing-page p::selection, img::selection, h1::selection, h2::selection, .pre-info span::selection {
+    background-color: var(--primary);
+    color: white;
+}
+
+/* background start */
+
+.background {
+    width: 100%;
+    height: fit-content;   
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 2.5%;
+}
+.background .main-title {
+    width: 100%;
+    text-align: center;
+    margin-top: -4%;
+}
+.background .main-title h1 {
+    color: var(--primary);
+}
+.background footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 4.6%;
+}
+.background footer p {
+    font-size: smaller;
+    color: gray;
+}
+/* background end */
+
+
+/* landing page start */
+
+.landing-page {
+    font-family: 'Roboto', sans-serif;
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    background-color: #FFF;
+    position: relative;
+    padding-bottom: 19px;
+    box-shadow: 0px 0px 7px 0px;
+    border-radius: 7px;
+    font-family: Arial;
+    line-height: 1.4;
+}
+
+.landing-page h1 {
+    margin-left: 40px;
+    padding-top: 40px;
+    font-weight: 900;
+    color: var(--primary);
+}
+
+.landing-page h2 {
+    color: var(--primary);
+}
+
+/* landing page end */
+
+
+/* pre info start */
+
+.landing-page .pre-info {
+    width: 35%;
+    float: right;
+    margin-right: 5%;
+    border: 4px solid var(--primary);
+    padding: 2% 0 2% 2%;
+    border-radius: 25px;
+    box-shadow: 1px 1px 7px 0px ;
+}
+
+.landing-page .pre-info img {
+    width: 90%;
+    margin: auto;
+}
+
+.main-side-info .scientific-classification span {
+    display: block;
+}
+
+.main-side-info .type-species span {
+    display: block;
+}
+
+.main-side-info h4 {
+    text-align: center;
+}
+
+/* pre info end */
+
+/* parent articles start */
+
+.landing-page .main-article {
+    margin-left: 5%;
+    width: 50%;
+}
+
+.landing-page .lower-main-article {
+    margin-left: 5%;
+    width: 90%;
+}
+
+.secondary {
+    background-color: #EEE;
+    padding: 20px;
+    border-radius: 7px;
+}
+.secondary:hover{
+    box-shadow: 1px 1px 10px 2px var(--primary);
+    transition: 0.3s;
+}
+.secondary h2 {
+    margin-top: 0;
+}
+.secondary p {
+    margin-bottom: 0;
+}
+/* parent articles end */
+
+/* child articles start */
+
+.morphology .mor-img {
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+
+.morphology .mor-img img {
+    width: 100%;
+}
+
+.morphology .mor-img p {
+    text-align: center;
+}
+
+.morphology .morphology-text {
+    padding-left: 5%;
+}
+
+.side-img {
+    float: right;
+    width: 25%;
+    height: fit-content;
+    padding: 10px;
+}
+
+.side-img p {
+    text-align: center;
+}
+
+.side-img img {
+    width: 100%;
+}
+
+.mesosoma {
+    padding-bottom: 10%;
+}
+
+.mesosoma .mesosoma-img img {
+    width: 100%;
+}
+
+/* child articles end */
+
+/* media queries start */
+
+@media(max-width: 750px) {
+    .landing-page {
+        width: 100%;
+        margin-left: 0;
+        border-radius: 0px;
+    }
+    .landing-page h1 {
+        margin-left: 45%;
+    }
+    .landing-page .side-img,
+    .mor-img,
+    .pre-info {
+        float: none !important;
+        width: 80% !important;
+        margin-left: 10% !important;
+        text-align: center !important;
+        padding-left: 0 !important;
+    }
+    .landing-page .main-article {
+        margin-left: 5%;
+        width: 90%;
+    }
+    .mesosoma {
+        padding-bottom: 12px;
+    }
+}
+
+/* media queries end */
